@@ -1,0 +1,14 @@
+{
+    "name": "singlemalt",
+    "devDependencies": {
+        "jshint": "latest",
+        "browserify": "latest",
+        "underscore": "latest"
+    },
+    "scripts": {
+        "lint": "jshint js/**",
+        "build:js": "browserify js/main.js > build/bundle.js",
+        "build": "npm run build:js",
+        "prebuild:js": "npm run lint"
+    }
+}
