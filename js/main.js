@@ -16,7 +16,9 @@ window.onload = function() {
 
     existing = window.location.hash.slice(1);
     if (existing === "") {
-        whisky.innerText = create.create(model, 4);
+        name = create.create(model, 4);
+        whisky.innerText = name;
+        window.location.hash = name;
     } else {
         whisky.innerText = existing;
     }
